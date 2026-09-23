@@ -2,9 +2,16 @@
 .terraform/
 *.tfstate
 *.tfstate.*
+*.tfplan
+*.tfplan.json
 crash.log
+crash.*.log
+.terraform.tfstate.lock.info
 
-# Secretos
+# Variables locales y secretos
 *.secrets.tfvars
 secrets.auto.tfvars
 .env
+
+# Archivos generados localmente
+variables.tf
